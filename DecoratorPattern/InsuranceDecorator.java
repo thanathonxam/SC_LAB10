@@ -17,7 +17,7 @@ public class InsuranceDecorator extends ShipmentDecorator{
 
     @Override
     public double getCost() {
-        return super.getCost() * (order.gettotalPrice()*0.1);
+        return super.getCost() + (order.gettotalPrice() * 0.1);
     }
     
 }
